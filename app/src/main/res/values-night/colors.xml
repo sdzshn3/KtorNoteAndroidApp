@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#039BE5</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#039BE5</color>
+    <color name="mediumDarkBackground">#303030</color>
+    <color name="darkBackground">#202020</color>
+    <color name="lightBackground">#404040</color>
+    <color name="TextColor">#FFFFFF</color>
+    <color name="backgroundColor">#000000</color>
+    <color name="colorButton">#039BE5</color>
+    <color name="itemBackground">#303030</color>
+    <color name="subTextColor">@android:color/secondary_text_dark</color>
+    <color name="addNoteTextColor">@android:color/tertiary_text_dark</color>
+</resources>
