@@ -21,10 +21,9 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import java.security.SecureRandom
 import java.security.cert.X509Certificate
+import java.util.concurrent.TimeUnit
 import javax.inject.Singleton
-import javax.net.ssl.SSLContext
-import javax.net.ssl.TrustManager
-import javax.net.ssl.X509TrustManager
+import javax.net.ssl.*
 
 @Module
 @InstallIn(ApplicationComponent::class)
@@ -64,7 +63,8 @@ object AppModule {
         sslContext.init(null, trustAllCertificates, SecureRandom())
         return OkHttpClient.Builder()
             .sslSocketFactory(sslContext.socketFactory, trustAllCertificates[0] as X509TrustManager)
-            .hostnameVerifier { _, _ -> true }
+            .hostnameVerifier (HostnameVerifier { _, _ -> true })
+            .callTimeout(30, TimeUnit.SECONDS)
     }
 
     @Provides

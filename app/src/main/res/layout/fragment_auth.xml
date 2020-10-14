@@ -50,7 +50,9 @@
         app:layout_constraintBottom_toBottomOf="@id/loginContainer"
         app:layout_constraintBottom_toTopOf="@id/guideline"
         app:layout_constraintEnd_toStartOf="@id/ivArrowUpRight"
-        app:layout_constraintStart_toEndOf="@id/ivArrowUpLeft">
+        app:layout_constraintStart_toEndOf="@id/ivArrowUpLeft"
+        android:textColorHint="@color/TextColor"
+        >
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etLoginEmail"
@@ -60,7 +62,10 @@
             android:hint="E-Mail"
             android:textColorHint="@android:color/tertiary_text_light"
             android:inputType="textEmailAddress"
-            android:padding="16dp" />
+            android:padding="16dp"
+            android:background="@color/backgroundColor"
+            android:textColor="@color/TextColor"
+            />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -71,7 +76,8 @@
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toStartOf="@id/ivArrowUpRight"
         app:layout_constraintStart_toEndOf="@id/ivArrowUpLeft"
-        app:layout_constraintTop_toBottomOf="@id/tilLoginEmail">
+        app:layout_constraintTop_toBottomOf="@id/tilLoginEmail"
+        android:textColorHint="@color/TextColor">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etLoginPassword"
@@ -81,7 +87,9 @@
             android:hint="Password"
             android:textColorHint="@android:color/tertiary_text_light"
             android:inputType="textPassword"
-            android:padding="16dp" />
+            android:padding="16dp"
+            android:background="@color/backgroundColor"
+            android:textColor="@color/TextColor"/>
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -93,7 +101,8 @@
         android:layout_marginTop="16dp"
         android:text="Login"
         app:layout_constraintEnd_toEndOf="@id/tilLoginPassword"
-        app:layout_constraintTop_toBottomOf="@id/tilLoginPassword" />
+        app:layout_constraintTop_toBottomOf="@id/tilLoginPassword"
+        android:background="@color/colorButton"/>
 
     <!-- REGISTER PAGE -->
 
@@ -164,7 +173,8 @@
         android:alpha="0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvRegisterTitle">
+        app:layout_constraintTop_toBottomOf="@id/tvRegisterTitle"
+        android:textColorHint="@color/TextColor">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etRegisterEmail"
@@ -175,7 +185,8 @@
             android:textColorHint="@android:color/tertiary_text_light"
             android:inputType="textEmailAddress"
             android:padding="16dp"
-            android:textColor="@android:color/white" />
+            android:background="@color/backgroundColor"
+            android:textColor="@color/TextColor"/>
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -187,7 +198,8 @@
         android:alpha="0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvRegisterTitle">
+        app:layout_constraintTop_toBottomOf="@id/tvRegisterTitle"
+        android:textColorHint="@color/TextColor">
 
         <EditText
             android:id="@+id/etRegisterPassword"
@@ -198,7 +210,8 @@
             android:textColorHint="@android:color/tertiary_text_light"
             android:inputType="textPassword"
             android:padding="16dp"
-            android:textColor="@android:color/white" />
+            android:background="@color/backgroundColor"
+            android:textColor="@color/TextColor" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -210,7 +223,8 @@
         android:alpha="0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvRegisterTitle" >
+        app:layout_constraintTop_toBottomOf="@id/tvRegisterTitle"
+        android:textColorHint="@color/TextColor">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etRegisterPasswordConfirm"
@@ -221,7 +235,8 @@
             android:textColorHint="@android:color/tertiary_text_light"
             android:inputType="textPassword"
             android:padding="16dp"
-            android:textColor="@android:color/white"/>
+            android:background="@color/backgroundColor"
+            android:textColor="@color/TextColor"/>
 
     </com.google.android.material.textfield.TextInputLayout>
 
